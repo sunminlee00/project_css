@@ -1,0 +1,11 @@
+header nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding:20px 30px; 
+    background-color:darkmagenta;
+    color:white;    
+}
+
+header nav ul li{
+    display: inline-block;
+}
