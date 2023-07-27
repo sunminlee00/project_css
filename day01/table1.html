@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       table{
+         width:750px;
+         border-collapse: collapse;
+       }
+        tr td,tr th{
+            border:1px solid silver;
+        }
+        
+        tr th{
+            background-color:teal;
+        }
+        col.t{
+            background-color:yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <caption>[표1] 학생관리</caption>
+        <colgroup>
+           <col class="t">
+           <col>
+           <col class="t">
+        </colgroup>
+
+        <thead>
+            <tr><th scope="col">번호</th>
+                <th scope="col">이름</th>
+                <th scope="col">나이</th></tr>
+        </thead>
+        <tbody>
+             <tr><td>1</td><td>홍길동</td><td>20</td></tr>
+             <tr>
+                <td>2</td>
+                <td>김하나</td>
+                <td>25</td>
+             </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
