@@ -22,7 +22,7 @@
          </li>
          <li>
             <label for]="name">이름</label>
-            <input type="text" name="name" id="name"  size="5">
+            <input type="text" name="name" id="name"  value="ttt" size="5">
          </li>
          <li>
             <input type="hidden" name="data" value="test">
@@ -45,6 +45,7 @@
              <input type="checkbox" value="어묵" id="f3" name="favfood">
             </fieldset>
         </li>
+        <!--        
         <li>
           <label for="file1">업로드 파일</label>
            <input type="file" name="file1" id="file1">
@@ -54,12 +55,46 @@
             <input type="email" name="myemail" id="myemail" required>
         </li>
         <li>
-            <label for="myphone">이메일</label>
+            <label for="myphone">전화번호</label>
             <input type="tel" name="myphone" id="myphone" required>
         </li>
         <li>
-            <label for="mypage">이메일</label>
+            <label for="mypage">사이트</label>
             <input type="url" name="mypage" id="mypage" required>
+        </li>
+        <li>
+            <label>수량</label>
+            <input type="number" name="stock_number"
+                id="stock_number" min="30" max="100" step="10" value="50">
+        </li>
+        <li>
+             <label>범위</label>
+             <input type="range" name="number_range" id="number_range"
+                min="10" max="20" step="2" value="14">
+        </li>
+        <li>
+           <input type="date" min="2023-07-05" max="2023-08-10">
+        </li>
+-->
+
+        <li>
+             <label for="dept">부서</label>
+             <select id="dept" name="dept" size="5" multiple>
+                 <option value="a">part-a</option>
+                 <option value="b">part-b</option>
+                 <option value="c">part-c</option>
+                 <optgroup label="세부목록">
+                  <option value="sub-1">sub-1</option>
+                  <option value="sub-2">sub-2</option>
+                  <option value="sub-3">sub-3</option>
+                 </optgroup>
+             </select>
+        </li>
+        <li>
+            <label for="talk">하고싶은말</label>
+            <textarea name="talk" id="talk" rows="4" cols="20">
+                hong gil dong
+           </textarea>
         </li>
          <li>
           <!-- <input type="submit" value="전송" id="send"> -->
