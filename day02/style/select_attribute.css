@@ -1,0 +1,32 @@
+div{
+    width:100px; height:100px;
+    background:yellow;
+    border:2px solid blue;
+    float:left;
+    margin-right:10px;
+}
+div.clear{
+    clear:both;
+}
+
+
+div[title~="h1"]{
+    color:brown;
+    font-size:12px;
+}
+
+a{
+    display: inline-block;
+    width:100px;  
+}
+a[href$="com"]{
+    color:red;
+}
+a[href ^="http"]{
+    border:3px solid green;
+}
+a[href*="shinhan"]{
+    background:darkblue;
+    color:white;
+    font-size:20px;
+}
