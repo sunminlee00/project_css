@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form method="post" action="result">
+        <fieldset>
+        <legend>수강 신청인</legend>
+         <ul>
+            <li>
+               <label for="hakno">학번</label>
+               <input type="text" id="hakno" name="hakno">
+              <label for="name">이름</label>
+              <input type="text" name="name" id="name">
+            </li>
+         </ul>
+     </fieldset>
+     <fieldset>
+       <legend>수강 과목을 선택하세요</legend>
+        <ul>
+            <li><label for="bg">선호색상</label>
+               <input type="color" id="bg" name="bg">
+             </li>
+            <li>
+                <label>신청 과목(회화) </label>
+                <input type="radio" name="eng" id="level1"  value="level1" checked>
+                <label for="level1">영어 회화(초급)</label>
+                <input type="radio" name="eng" id="level2" value="level2">
+                <label for="level2">영어 회화(중급)</label>
+                <input type="radio" name="eng" id="level3" value="level3">
+                <label for="level3">영어 회화(고급)</label>
+           </li>
+            <li>
+                <label>신청 과목(자격) </label>
+                <input type="radio" name="dept" id="dept1"  
+                value="toeic" checked>
+                <label for="dept1">toeic</label>
+                <input type="radio" name="dept" id="dept2" 
+                value="toefl">
+                <label for="dept2">toefl</label>
+                <input type="radio" name="dept" id="dept3" 
+                value="opic">
+                <label for="dept3">opic</label>
+            </li>
+            <li>
+               <label for="fav">관심분야</label>
+               <input type="text" name="fav" id="fav">  
+            </li>
+        </ul>
+     </fieldset>
+     <button type="submit">전송</button>
+     </form>
+</body>
+</html>
