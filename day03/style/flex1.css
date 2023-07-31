@@ -1,0 +1,13 @@
+.t{
+    border:3px solid black;
+    width:100px;
+    height:100px;
+}
+#wrap{
+     display: flex;
+     flex-direction: row;
+     justify-content:space-evenly;
+     width:100vw;
+     height:100vh;
+     background-color:silver;
+    }
