@@ -1,0 +1,59 @@
+#wrap{
+    width:85%;
+    margin:0 auto;
+}
+
+header{
+    border:1px solid rgb(102,102,102);
+    background-color:rgb(204,255,255);
+}
+nav{
+    background-color:pink;
+}
+
+div.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+nav ul li {
+    list-style:none;
+    display: inline-block;
+} 
+
+nav ul li a{
+    display: inline-block;
+    padding:20px 40px;
+    text-decoration: none;
+    color:black;
+}
+.main aside{
+    background-color:skyblue;
+}
+.main aside li{
+    list-style:none;
+}
+.main aside li a{
+     display: inline-block;
+     padding:10px 30px;
+}
+
+article{
+    background:lightyellow;
+}
+
+aside{
+    width:25%;
+}
+article{
+    width:70%;
+}
+
+footer{
+    background-color:skyblue; 
+}
+footer p{
+    padding:30px 10px;
+}
