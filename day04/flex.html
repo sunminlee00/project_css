@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+      #test{
+        display: flex;
+        flex-direction: row ;
+      }
+      
+      .content1, .content2, .content3, .content4{
+        border:1px solid silver;
+    
+        flex-grow: 2;
+      }
+      .content3{
+        order:1;
+      }
+      .content1{
+        order:3;
+      }
+  </style>
+</head>
+<body>
+  <div id="test">
+      <div class="content1">번호1</div>
+      <div class="content2">번호2</div>
+      <div class="content3">번호3</div>
+      <div class="content4">번호4</div>
+
+
+  </div>
+
+
+
+</body>
+</html>
