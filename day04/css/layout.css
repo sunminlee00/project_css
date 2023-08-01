@@ -1,0 +1,53 @@
+.wrap{
+   width:85%;
+   margin:0 auto;   
+}
+
+header, aside, section, footer{
+    border:1px solid silver;
+}
+header h1{
+    padding:1vh 10vw;
+}
+main{
+   margin-top:2vh; 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+section{
+    width:50%;
+}
+
+section h2{
+      position:relative;
+      left:2vw;
+}
+section p{
+    position:relative;
+    left:3vw;
+}
+
+aside{
+     width:20%;
+}
+aside h3{
+    position:relative;
+    left:2vw;
+}
+
+aside ul li{
+    list-style:none;
+}
+
+aside ul li a{
+     display: inline-block;
+     text-decoration: none;
+     padding:0.8vh 0vw;
+}
+footer{
+    margin-top:2vh;
+}
+footer p{
+    padding:2vh 2vw;
+}
