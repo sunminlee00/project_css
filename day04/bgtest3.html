@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div.linear{width:400px; height:400px;
+        border:1px solid silver;
+       /* background:linear-gradient(to top, darkblue, white);*/
+       background:linear-gradient(to top, darkblue, white 50% , darkblue);
+    }
+     
+    div{
+        width:100px; height:100px;
+        border:1px solid silver;
+        background:green;
+        float:left;
+         background:radial-gradient(circle, white, darkblue);
+
+    }
+    div.clear{
+       clear:both;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="linear">hello</div>
+
+     <div>div1</div>
+     <div>div2</div>
+     <div>div3</div>
+
+      <div class="clear">eee</div>
+
+
+
+
+</body>
+</html>
