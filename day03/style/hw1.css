@@ -4,23 +4,45 @@
 }
 
 header{
-    border:1px solid rgb(102,102,102);
+    border:1px solid silver;
     background-color:rgb(204,255,255);
+    border-radius: 20px;
+}
+
+header img{
+    margin:20px 0px 0px 20px;
+}
+header p{
+     margin-left:20px;
 }
 nav{
-    background-color:pink;
+    background-color:rgb(255,232,247);
+    border-radius: 20px;
+    border:1px solid silver;
+    margin-top:10px;
 }
+
+nav ul li a:hover{
+    background-color:purple;
+    color:white;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
 
 div.main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top:10px;
 
 }
+
 
 nav ul li {
     list-style:none;
     display: inline-block;
+   
 } 
 
 nav ul li a{
@@ -31,6 +53,7 @@ nav ul li a{
 }
 .main aside{
     background-color:skyblue;
+    border-radius: 20px;
 }
 .main aside li{
     list-style:none;
@@ -38,17 +61,51 @@ nav ul li a{
 .main aside li a{
      display: inline-block;
      padding:10px 30px;
+     text-decoration: none;
+     color:purple;
 }
+
+.main aside li a:hover{
+    background-color:purple;
+    color:white;
+    border-radius: 20px;
+}
+
 
 article{
     background:lightyellow;
 }
 
 aside{
-    width:25%;
+    width:15%;
+    border:1px solid silver;
 }
 article{
-    width:70%;
+    width:82%;
+    border:1px solid silver;
+    border-radius: 10px;
+}
+
+article h2, article h4{
+    margin-left:20px;
+}
+article p{
+    margin-left:25px;
+}
+article section{
+     width:50%;
+     margin:10px 30px;
+     border:1px solid silver;
+     border-radius: 20px;
+     background-color: white;
+}
+
+article section h5{
+    color:red;
+    margin-left:40px;
+}
+article section p{
+    margin-left:50px;
 }
 
 footer{
