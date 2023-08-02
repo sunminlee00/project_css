@@ -97,6 +97,7 @@ and (orientation:landscape)
   .wrap{
     width:95%;
     margin:0 auto;
+    padding:0;
   }
   
   header{
@@ -109,13 +110,12 @@ and (orientation:landscape)
   a{
     text-decoration: none;
    }
-   
+  
    .logo{
       display: inline-block;
       position:relative;
       top:1vh;
-      left:1vw;
-      width:5vw;
+      width:20%;
       text-decoration: center;
    }
   .main_menu{
@@ -125,26 +125,110 @@ and (orientation:landscape)
        display: inline-block;
        width:60%;
        position:relative;
-       left:2vw;
        top:-1vh;
+       left:-10vw;
        background-color:green;
    }
    nav.menu ul li{
       list-style:none;
       display: inline-block;
+      position: relative;
+      left:3vw;
    }
    nav.menu li a{
      display: inline-block;
-     padding:1vh 1.5vw;
-     color:white;
+     padding:1vh 3vw;
      position:relative;
-     top:3vh;
+     top:2vh;
+     font-size:1rem;
    }
-  
+   nav.menu li a:hover{
+    background-color:white;
+    color:green;
+   }
+   ul.list {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  ul.list li{
+    width:33.3%;
+    list-style: none;
+    display: flex;
+    border:none;
+    border-bottom: 1px solid silver;
+}
+a.inner div{
+     display: inline-block;  
+ }
+ a.inner div img{
+    width:10vw;
+ }
+  .thumb{
+    display: inline-block;
+    padding:3vh 0;
+  }
+  .title{
+    display: inline-block;
+    position:relative;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:2vh 0;
+    color:red;
+  }
 }
 
 @media screen and (min-width:1024px)
+ , screen and (min-height:1024px)
+   and(orientation:landscape)
 {
+  .wrap{
+     width:95%;
+     margin:0 auto;
+  }
+  .wrap header nav a{
+    font-size:1.5rem;
+    display: inline-block;
+  }
+  a{
+    text-decoration:none;
+  }
+  header{
+    display: flex;
+    flex-direction: row;
+    margin-top:2vh;
+    justify-content: space-between;
+  }
+
+  .logo{
+     position:relative;
+     left:-1.5vw;
+  }
+   .main_menu{
+    display: none;
+   }
+     header{
+        background-color:white;
+     }
+
+   nav.menu {
+    background:white;
+    position:relative;
+    top:10vh;
+    margin-right: 1vw;
+   }
+
+   header nav a{
+    display: inline-block;
+    text-decoration: none;
+    color:#555;
+    font-size:1rem;
+    padding:2vh 2vw;
+   }
+
 
 }
 
