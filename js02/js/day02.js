@@ -225,13 +225,13 @@ else
   빵이나 우유나 샐러드   or (||)
   */
 
-  console.log(10>=10 && 10!==10);//true && false=> false
-  console.log(10!==10 && 10>=10);//false
+//   console.log(10>=10 && 10!==10);//true && false=> false
+//   console.log(10!==10 && 10>=10);//false
   
-  console.log(10==10 && 20>=20);
+//   console.log(10==10 && 20>=20);
 
-  console.log(10>=10  || 10!==10);// true
-  console.log(10!==10 || 10>=10); //trued
+//   console.log(10>=10  || 10!==10);// true
+//   console.log(10!==10 || 10>=10); //trued
     
 
 
@@ -250,28 +250,28 @@ else
      console.log('가');   
 */
 
-document.getElementById('btn').onclick=function(){
+// document.getElementById('btn').onclick=function(){
 
-     let elekor=document.getElementById('kor');
-     let kor=Number(elekor.value);
-     let eleeng=document.getElementById('eng');
-     let eng=Number(eleeng.value);
-     let elemath=document.getElementById('math');
-     let math=Number(elemath.value);
+//      let elekor=document.getElementById('kor');
+//      let kor=Number(elekor.value);
+//      let eleeng=document.getElementById('eng');
+//      let eng=Number(eleeng.value);
+//      let elemath=document.getElementById('math');
+//      let math=Number(elemath.value);
     
-     let avg=(kor+eng+math)/3;
+//      let avg=(kor+eng+math)/3;
      
-     let result="<li> 평균점수 :"+avg;
+//      let result="<li> 평균점수 :"+avg;
 
-     if(kor>=90 && eng>=90&& math>=90)
-         result+="<li>very good</li>";
-     else if(kor>=90 || eng>=90 || math>=90)
-         result+="<li>good</li>";
-     else
-        result+="<li>bad</li>";
+//      if(kor>=90 && eng>=90&& math>=90)
+//          result+="<li>very good</li>";
+//      else if(kor>=90 || eng>=90 || math>=90)
+//          result+="<li>good</li>";
+//      else
+//         result+="<li>bad</li>";
 
-    document.getElementById('result')
-      .innerHTML=result;
+//     document.getElementById('result')
+//       .innerHTML=result;
 
 
    //   if(kor>=90)
@@ -288,27 +288,211 @@ document.getElementById('btn').onclick=function(){
    //     .innerHTML='국어 :'+kor+' , 결과 : '+result;
       
       //console.log(kor, typeof kor);
-      elekor.value='';
-      eleeng.value='';
-      elemath.value='';
-   }
+   //    elekor.value='';
+   //    eleeng.value='';
+   //    elemath.value='';
+   // }
+
+   /*
+     switch...
+     */
+
+   // let su=10;
+
+   // switch(변수 or 식) //변수, 식 
+   // {
+   //    case 값
+   //      break;
+   // }
+
+//   let su=2;
+//   let data='';
+//   switch(su)
+//   {
+//     case 5:
+//       data+='5';
+//     case 4:
+//       data+='4';
+//     case 3:
+//       data+='3';
+//     case 2:
+//        data+='2';
+//     case 1:
+//        data+='1';
+//        break;
+//      default:
+//        data+='나머지경우'; 
+//   }
+
+//   console.log(data);
+
+// console.log('---------------');
+// let degree='a';
+// switch(degree)
+// {
+//     case 'a':
+//        console.log('a');
+//       break;
+//     case 'b':
+//        console.log('b');
+//        break;
+//     case 'c':
+//       console.log('c');
+//       break;
+//     default:
+//      console.log('the others');
+// }
+
+// let a=Number(prompt('숫자를 입력하세요',0));
+
+// switch(a%3)
+// {
+//     case 0:
+//        console.log('3의 배수');
+//        break;
+//     case 1:
+//       console.log('나머지는 1입니다');
+//        break;
+//      case 2:
+//        console.log('나머지가 2입니다.');
+// }
+
+/*
+  숫자를 입력받아서
+
+  3으로 나누면 
+   messagae =>3의 배수
+  4=> 
+    message=>나머지값은 1
+  5=> 나머지값은 2
+
+*/
 
 
+//   for(let i=10; i<15; i+=2)
+//   {
+//     console.log('i : ',i);
+//   }
 
 
+//Iterable 
+// let arr=['a1','a2','a3'];
+// console.log(arr);
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+
+// for(let i=0; i<arr.length; i++)
+// {
+//     console.log(arr[i]);
+// }
+// console.log('===============');
+
+// for(let item of arr)
+// {
+//     console.log(item);
+// }
+// console.log('============');
+
+// arr.forEach(item=>{
+//       console.log(item);
+// });
+
+// console.log('================');
+
+// let man={
+//    irum:'홍길동'
+//   , age:20
+//   , addr:'서울'
+// };
+
+// console.log(typeof man, man);
+// console.log(man.irum);
+// console.log(man.age);
+// console.log(man.addr);
+
+// console.log('===============');
+
+// for(let key in man)
+// {
+//    console.log(key);
+// }
+
+// console.log('=====배열에는 in을 사용하지 말자 ========');
+// for(let index in arr)
+// {
+//    console.log(index);
+// }
+
+// let data='hello, javascript!!!';
+
+// console.log(data[1]);
+
+// // data[1]='T';
+// // console.log(data);
+
+// for(let item of data)
+// {
+//    console.log(item);
+// }
+/*
+   while문 : 참일 동안 
+    
+   1... 5까지 출력하시오.
+
+*/
+
+// let i=0;
+// while(i<5){
+
+//  i++;
+//  console.log(i);
+// }
+
+/*
+      10  8  6   4  2
+
+*/
+// let i=10;
+// while(i >=2){
+
+//  console.log(i);
+//   i-=2;
+// }
+
+// let i=1;
+// while(true)
+// {
+//    console.log(i);
+//    if(i==5) break;
+//    i++;
+ 
+// }
 
 
+// for(let i=1; i<10; i++)
+// {
+//     if(i%3==0)
+//         continue;       
+//     console.log(i);
+// }
 
+//  let i=0;
+//  while(i<10)
+//  { 
 
+//     i++;
+//     if(i%3==0)
+//        continue;
+//        console.log(i);
+//  }
 
+ let sungjuckarr=[60,90,70,100,75];
 
-
-
-
-
-
-
-
+ sungjuckarr.forEach(function(item){
+      console.log(item);
+   
+ });
 
 
 
