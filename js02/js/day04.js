@@ -180,18 +180,67 @@ let irums=['홍','김','이','박','나'];
 //               console.log('finally');
 //           }
 
-let a=10;
-try{
-    if(a>=20)
-       console.log('a가 20보다 큽니다.');
-    else if(a==20)
-       throw new Error("20와 동일");
-    else
-       throw new Error("20보다 작다");
-}catch(e)
-{
-  console.log(e);
-}finally{
-  console.log('end!!');
+// let a=10;
+// try{
+//     if(a>=20)
+//        console.log('a가 20보다 큽니다.');
+//     else if(a==20)
+//        throw new Error("20와 동일");
+//     else
+//        throw new Error("20보다 작다");
+// }catch(e)
+// {
+//   console.log(e);
+// }finally{
+//   console.log('end!!');
 
-}
+// }
+
+document.getElementById('send')
+ .addEventListener('click', function(){
+   const irum=document.getElementById('irum');
+   const txtage=document.getElementById('age');
+
+
+   /*
+     숫자 :  숫자형 숫자  10 20 ... 
+             문자형 숫자  "10"
+    */
+  try{
+      let age=Number(txtage.value);
+      if(Number.isNaN(age)) {
+         throw new Error('숫자형 자료가 아님');
+      } else
+      {
+         if(age < 0) {
+          throw new Error('0보다 작습니다.'); 
+        } else{
+           console.log(`이름 :${irum.value}, age:${age}`);
+         }
+     }
+  }catch(e){
+    console.log(e);
+  }finally{
+    console.log('done');
+  }
+
+
+
+   irum.value="";
+   txtage.value="";
+
+});
+
+/*
+   async:브라우저가 페이지를 파싱하는 동안에도 스크립트가 실행 
+   defer: 브라우저가 페이지의 파싱을 모두 끝내면 스크립트가 실행 
+   async, defer모두 선언하지 않을 경우 
+     브라우저가 페이지를 파싱하기 전에 스크립트를 가져와서 
+     바로 실행 
+
+*/
+
+
+
+
+
