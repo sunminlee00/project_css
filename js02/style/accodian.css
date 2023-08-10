@@ -3,13 +3,19 @@
     background-color: lightgray;
     color:black;
     padding:5vh 5vw;
-    width:100%;
+    width:70%;
     border:1px solid silver;
     cursor: pointer;
 }
+.active, .accodian:hover{
+    background-color:blue;
+    color:white;
+}
+
 .panel{
     padding:0 2vw;
     max-height: 0;
+    width:70vw;
     overflow: hidden;
     transition:max-height 0.2s ease-out;
 }

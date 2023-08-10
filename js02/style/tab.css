@@ -1,0 +1,48 @@
+* {
+    margin:0;
+
+}
+
+div.tab{
+   width:80vw;
+}
+
+ul.tablist{
+    border-bottom:1px solid silver;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+ul li a{
+    display: inline-block;
+    padding:1vh 3vw 0vh 5vw;
+    text-decoration: none;
+    font-size: 1rem;
+    color:black;
+    font-weight: bolder;
+}
+
+div.tabpanel{
+   position:absolute;
+   top:10vh;
+   width:80vw;
+   height:40vh;
+   border-bottom:1px solid silver;
+  
+}
+.tabpanel{
+    display: none;
+}
+.tabpanel h2, .tabpanel p{
+    margin-left:10vw;
+}
+.visit{
+    display: block;
+}
+.bgpanel{
+    background-color:darkmagenta;
+    color:white;
+}
