@@ -1,0 +1,15 @@
+.accodian{
+
+    background-color: lightgray;
+    color:black;
+    padding:5vh 5vw;
+    width:100%;
+    border:1px solid silver;
+    cursor: pointer;
+}
+.panel{
+    padding:0 2vw;
+    max-height: 0;
+    overflow: hidden;
+    transition:max-height 0.2s ease-out;
+}

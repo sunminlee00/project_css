@@ -100,3 +100,7 @@ ele_li.forEach(item=>{
      item.className='green';
 
 })
+
+//document.getElementById('aaa').innerHTML="<p>hello</p>";
+
+document.getElementById('aaa').textContent="<p>hello</p>";

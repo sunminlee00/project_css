@@ -1,0 +1,28 @@
+#myInput{
+   width:76vw;
+   font-size:1rem;
+   border:1px solid silver;
+   padding:1vh 2vw;
+   margin-bottom: 1vh;
+
+}
+
+#myul{
+   list-style: none;
+   padding:0;
+   margin:0; 
+   width:80vw;
+}
+#myul li a{
+     width:78vw;
+     border:1px solid #ddd;
+     background-color:#f6f6f6;
+     text-decoration: none; 
+     font-size:1.2rem;
+     color:black;
+     display: block;
+}
+
+#myul li a:hover{
+    background-color:#eee;
+}
