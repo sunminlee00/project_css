@@ -34,8 +34,6 @@ mytabs.forEach(item=>{
             data='tabpanel-1';
         document.getElementById(data).classList.add('visit');  
 
-
-
     });
 
 
